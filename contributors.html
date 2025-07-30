@@ -141,16 +141,24 @@
 
     /* Cosmic Hero Section */
     .cosmic-hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 4rem 2rem;
       position: relative;
       max-width: 1200px;
       margin: 0 auto;
+      padding-top: 6rem; /* Add top padding to account for fixed navigation */
+      min-height: 80vh; /* Ensure enough height for proper centering */
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .contributors-title {
@@ -696,6 +704,8 @@
 
       .cosmic-hero {
         padding: 2rem 1rem;
+        padding-top: 5rem; /* Maintain top padding on mobile */
+        min-height: 70vh; /* Adjust height for mobile */
       }
     }
 
