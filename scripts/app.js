@@ -155,10 +155,10 @@ class WebDev100Days {
   }
 
   async loadProjects() {
-    // Complete list of all projects with correct day numbers from folder names
-    this.projects = [
+    // Complete list of all projects - day numbers will be assigned sequentially
+    const projectsData = [
       {
-        day: 1,
+        originalDay: 1,
         name: "Todo List",
         description: "A simple and elegant todo list application with local storage support.",
         demoLink: "./public/Day-1_TodoList/index.html",
@@ -167,7 +167,7 @@ class WebDev100Days {
         features: ["Add/Remove Tasks", "Mark Complete", "Local Storage"]
       },
       {
-        day: 2,
+        originalDay: 2,
         name: "Digital Clock",
         description: "A beautiful digital clock with customizable themes and formats.",
         demoLink: "./public/Day-2_digital_clock/digitalclock.html",
@@ -176,7 +176,7 @@ class WebDev100Days {
         features: ["Real-time Updates", "Multiple Formats", "Theme Options"]
       },
       {
-        day: 3,
+        originalDay: 3,
         name: "ASCII Art Generator",
         description: "Convert text into ASCII art with various font styles and customization options.",
         demoLink: "./public/Day-3_AsciiArtGenerator/index.html",
@@ -185,7 +185,7 @@ class WebDev100Days {
         features: ["Multiple Fonts", "Customizable Output", "Copy to Clipboard"]
       },
       {
-        day: 4,
+        originalDay: 4,
         name: "Password Visualizer",
         description: "Visualize password strength and complexity with interactive graphics.",
         demoLink: "./public/Day-4_password_visualizer/index.html",
@@ -194,7 +194,7 @@ class WebDev100Days {
         features: ["Strength Analysis", "Visual Feedback", "Security Tips"]
       },
       {
-        day: 5,
+        originalDay: 5,
         name: "Physics Simulation",
         description: "Interactive physics simulation with bouncing balls and gravity effects.",
         demoLink: "./public/Day-5_physics_simulation/index.html",
@@ -203,7 +203,7 @@ class WebDev100Days {
         features: ["Physics Engine", "Interactive Controls", "Real-time Animation"]
       },
       {
-        day: 6,
+        originalDay: 6,
         name: "Quote Generator",
         description: "Generate inspirational quotes with beautiful backgrounds and sharing options.",
         demoLink: "./public/Day-6_QuoteGenerator/index.html",
@@ -212,7 +212,7 @@ class WebDev100Days {
         features: ["Random Quotes", "Category Filter", "Social Sharing"]
       },
       {
-        day: 7,
+        originalDay: 7,
         name: "Character Word Counter",
         description: "Count characters, words, and paragraphs in real-time with detailed statistics.",
         demoLink: "./public/Day-7_CharacterWordCounter/index.html",
@@ -221,7 +221,7 @@ class WebDev100Days {
         features: ["Real-time Counting", "Statistics", "Word Analysis"]
       },
       {
-        day: 8,
+        originalDay: 8,
         name: "Dice Roll Simulator",
         description: "Simulate dice rolls with realistic 3D animations and multiple dice options.",
         demoLink: "./public/Day-8_DiceRollSimulator/index.html",
@@ -230,7 +230,7 @@ class WebDev100Days {
         features: ["3D Animation", "Multiple Dice", "Statistics Tracking"]
       },
       {
-        day: 9,
+        originalDay: 9,
         name: "Guess My Number",
         description: "A fun number guessing game with hints and score tracking.",
         demoLink: "./public/Day-9_Guess_My_Number/index.html",
@@ -239,7 +239,7 @@ class WebDev100Days {
         features: ["Hint System", "Score Tracking", "Difficulty Levels"]
       },
       {
-        day: 10,
+        originalDay: 10,
         name: "Neon Brick Breaker",
         description: "A modern twist on the classic brick breaker game with neon graphics.",
         demoLink: "./public/Day-10_Neon_Brick_Breaker/index.html",
@@ -248,7 +248,7 @@ class WebDev100Days {
         features: ["Neon Graphics", "Power-ups", "Score System"]
       },
       {
-        day: 11,
+        originalDay: 11,
         name: "Weather App",
         description: "Get real-time weather information for any city with a beautiful interface.",
         demoLink: "./public/Day-11_WeatherApp/index.html",
@@ -257,7 +257,7 @@ class WebDev100Days {
         features: ["Real-time Data", "City Search", "Weather Icons"]
       },
       {
-        day: 13,
+        originalDay: 13,
         name: "Coin Flip",
         description: "A realistic coin flipping animation with statistics tracking.",
         demoLink: "./public/Day-13_Coin_Flip/index.html",
@@ -266,7 +266,7 @@ class WebDev100Days {
         features: ["Realistic Animation", "Statistics", "Sound Effects"]
       },
       {
-        day: 14,
+        originalDay: 14,
         name: "E-Waste Management Hub",
         description: "Educational platform for e-waste management with location finder.",
         demoLink: "./public/Day-14_E-WasteManagementHub/index.html",
@@ -275,7 +275,7 @@ class WebDev100Days {
         features: ["Location Finder", "Educational Content", "Environmental Impact"]
       },
       {
-        day: 15,
+        originalDay: 15,
         name: "Currency Converter",
         description: "Convert between different currencies with real-time exchange rates.",
         demoLink: "./public/Day-15_Currency_Converter/index.html",
@@ -284,7 +284,7 @@ class WebDev100Days {
         features: ["Real-time Rates", "Multiple Currencies", "History"]
       },
       {
-        day: 16,
+        originalDay: 16,
         name: "Random User Generator",
         description: "Generate random user profiles with photos and detailed information.",
         demoLink: "./public/Day-16_Random_User_Generator/index.html",
@@ -293,7 +293,7 @@ class WebDev100Days {
         features: ["Random Profiles", "Photo Gallery", "Export Data"]
       },
       {
-        day: 17,
+        originalDay: 17,
         name: "Image Search App",
         description: "Search and browse high-quality images with advanced filtering options.",
         demoLink: "./public/Day-17_Image_Search_App/index.html",
@@ -302,7 +302,7 @@ class WebDev100Days {
         features: ["Image Search", "High Quality", "Download Options"]
       },
       {
-        day: 20,
+        originalDay: 20,
         name: "Tic Tac Toe",
         description: "Classic tic-tac-toe game with AI opponent and score tracking.",
         demoLink: "./public/Day-20_tictactoe/index.html",
@@ -311,7 +311,7 @@ class WebDev100Days {
         features: ["AI Opponent", "Score Tracking", "Responsive Design"]
       },
       {
-        day: 21,
+        originalDay: 21,
         name: "Candy Crush",
         description: "Match-3 puzzle game inspired by the popular Candy Crush saga.",
         demoLink: "./public/Day-21_candycrush/candy_crush.html",
@@ -320,7 +320,7 @@ class WebDev100Days {
         features: ["Match-3 Gameplay", "Score System", "Power-ups"]
       },
       {
-        day: 22,
+        originalDay: 22,
         name: "Palette Generator",
         description: "Generate beautiful color palettes for your design projects.",
         demoLink: "./public/Day-22_Palette_generator/index.html",
@@ -329,7 +329,7 @@ class WebDev100Days {
         features: ["Random Generation", "Export Options", "Color Codes"]
       },
       {
-        day: 23,
+        originalDay: 23,
         name: "QR Code Generator",
         description: "Generate QR codes for text, URLs, and other data types.",
         demoLink: "./public/Day-23_QRCodeGenerator/index.html",
@@ -338,7 +338,7 @@ class WebDev100Days {
         features: ["Multiple Data Types", "Customizable Size", "Download Option"]
       },
       {
-        day: 23,
+        originalDay: 23,
         name: "Rock Paper Scissors",
         description: "Classic rock paper scissors game with computer opponent.",
         demoLink: "./public/Day-23_RockPaperScissor/index.html",
@@ -347,7 +347,7 @@ class WebDev100Days {
         features: ["Computer AI", "Score Tracking", "Animated Results"]
       },
       {
-        day: 26,
+        originalDay: 26,
         name: "Drawing App",
         description: "Digital drawing canvas with multiple brush tools and colors.",
         demoLink: "./public/Day-26_Drawing/index.html",
@@ -356,7 +356,7 @@ class WebDev100Days {
         features: ["Multiple Brushes", "Color Picker", "Save Drawing"]
       },
       {
-        day: 28,
+        originalDay: 28,
         name: "Target Reflex Test",
         description: "Test your reflexes by clicking on moving targets as fast as possible.",
         demoLink: "./public/Day-28_Target_Reflex_Test/index.html",
@@ -365,7 +365,7 @@ class WebDev100Days {
         features: ["Reflex Testing", "High Scores", "Difficulty Levels"]
       },
       {
-        day: 31,
+        originalDay: 31,
         name: "Memory Game",
         description: "Classic memory card matching game with multiple difficulty levels.",
         demoLink: "./public/Day-31/index.html",
@@ -374,7 +374,7 @@ class WebDev100Days {
         features: ["Memory Training", "Multiple Levels", "Timer Challenge"]
       },
       {
-        day: 34,
+        originalDay: 34,
         name: "Color Picker",
         description: "Advanced color picker with multiple format outputs and palette saving.",
         demoLink: "./public/Day-34-Colour_picker/index.html",
@@ -383,7 +383,7 @@ class WebDev100Days {
         features: ["Multiple Formats", "Palette Saving", "Color History"]
       },
       {
-        day: 35,
+        originalDay: 35,
         name: "Advanced Drawing",
         description: "Professional drawing application with layers and advanced tools.",
         demoLink: "./public/Day-35-Drawing/index.html",
@@ -392,7 +392,7 @@ class WebDev100Days {
         features: ["Layer Support", "Advanced Tools", "Export Options"]
       },
       {
-        day: 36,
+        originalDay: 36,
         name: "Notes App",
         description: "Feature-rich notes application with search and organization tools.",
         demoLink: "./public/Day-36_Notes_App/index.html",
@@ -401,7 +401,7 @@ class WebDev100Days {
         features: ["Rich Text Editor", "Search Function", "Tag Organization"]
       },
       {
-        day: 42,
+        originalDay: 42,
         name: "Note Taker",
         description: "Simple and efficient note-taking app with markdown support.",
         demoLink: "./public/Day-42_NoteTaker/index.html",
@@ -410,7 +410,7 @@ class WebDev100Days {
         features: ["Markdown Support", "Auto-save", "Export Notes"]
       },
       {
-        day: 45,
+        originalDay: 45,
         name: "Audio Visualizer",
         description: "Interactive audio visualizer with particle effects and real-time frequency analysis.",
         demoLink: "./public/Day-45/index.html",
@@ -419,7 +419,7 @@ class WebDev100Days {
         features: ["Audio Analysis", "Particle Effects", "Real-time Visualization", "Multiple Themes"]
       },
       {
-        day: 47,
+        originalDay: 47,
         name: "Pomodoro Timer",
         description: "Productivity timer with task management, customizable themes, and session tracking.",
         demoLink: "./public/Day-47_Pomodoro-app/index.html",
@@ -428,7 +428,7 @@ class WebDev100Days {
         features: ["Timer Sessions", "Task Management", "Dark Mode", "Custom Themes", "Statistics"]
       },
       {
-        day: 51,
+        originalDay: 51,
         name: "Chess Game",
         description: "Interactive chess game with move validation, piece animations, and game state tracking.",
         demoLink: "./public/Day-51/index.html",
@@ -437,7 +437,7 @@ class WebDev100Days {
         features: ["Move Validation", "Piece Animation", "Game Logic", "Interactive Board"]
       },
       {
-        day: 72,
+        originalDay: 72,
         name: "Portfolio Website",
         description: "Modern portfolio website template with responsive design and animations.",
         demoLink: "./public/Day-72_Portfolio/index.html",
@@ -447,7 +447,7 @@ class WebDev100Days {
       },
       // Non-numbered projects (using 100+ for consistency)
       {
-        day: 101,
+        originalDay: 101,
         name: "Etch-a-Sketch",
         description: "Digital Etch-a-Sketch with customizable grid and drawing modes.",
         demoLink: "./public/Etch-a-Sketch/index.html",
@@ -456,7 +456,7 @@ class WebDev100Days {
         features: ["Customizable Grid", "Multiple Drawing Modes", "Clear Function"]
       },
       {
-        day: 102,
+        originalDay: 102,
         name: "GiggleBits",
         description: "Fun collection of interactive mini-games and entertainment.",
         demoLink: "./public/GiggleBits/index.html",
@@ -465,7 +465,7 @@ class WebDev100Days {
         features: ["Mini Games", "Entertainment Hub", "High Scores"]
       },
       {
-        day: 103,
+        originalDay: 103,
         name: "Gradient Generator",
         description: "Create beautiful CSS gradients with live preview and export functionality.",
         demoLink: "./public/Gradient_Generator/index.html",
@@ -474,7 +474,7 @@ class WebDev100Days {
         features: ["Live Preview", "CSS Export", "Color Picker", "Multiple Gradient Types"]
       },
       {
-        day: 104,
+        originalDay: 104,
         name: "Snake and Ladder",
         description: "Classic board game with multiplayer support and animated gameplay.",
         demoLink: "./public/Snake-and-Ladder-Game/index.html",
@@ -483,7 +483,7 @@ class WebDev100Days {
         features: ["Multiplayer Support", "Animated Gameplay", "Classic Rules"]
       },
       {
-        day: 105,
+        originalDay: 105,
         name: "Space Jumper Game",
         description: "Exciting space-themed jumping game with physics engine and score system.",
         demoLink: "./public/Space-Jumper-Game/index.html",
@@ -492,7 +492,7 @@ class WebDev100Days {
         features: ["Physics Engine", "Score System", "Responsive Controls", "Space Theme"]
       },
       {
-        day: 106,
+        originalDay: 106,
         name: "Space War Game",
         description: "Intense space battle game with enemy AI and power-ups.",
         demoLink: "./public/Space-War-Game/index.html",
@@ -501,7 +501,7 @@ class WebDev100Days {
         features: ["Enemy AI", "Power-ups", "Multiple Levels", "High Scores"]
       },
       {
-        day: 107,
+        originalDay: 107,
         name: "Stopwatch",
         description: "Precision stopwatch with lap timing and split functionality.",
         demoLink: "./public/Stopwatch/index.html",
@@ -510,7 +510,7 @@ class WebDev100Days {
         features: ["Precision Timing", "Lap Records", "Split Timing", "Export Results"]
       },
       {
-        day: 108,
+        originalDay: 108,
         name: "World Clock",
         description: "Display multiple world time zones with real-time updates and customization.",
         demoLink: "./public/World_Clock/index.html",
@@ -519,6 +519,12 @@ class WebDev100Days {
         features: ["Multiple Time Zones", "Real-time Updates", "Custom Locations", "12/24 Hour Format"]
       }
     ];
+
+    // Assign sequential day numbers (1, 2, 3, 4...) regardless of original day numbers
+    this.projects = projectsData.map((project, index) => ({
+      ...project,
+      day: index + 1
+    }));
 
     this.filteredProjects = [...this.projects];
   }
