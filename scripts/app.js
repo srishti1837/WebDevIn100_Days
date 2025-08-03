@@ -526,7 +526,36 @@ class WebDev100Days {
       day: index + 1
     }));
 
+    // Assign sequential day numbers (1, 2, 3, 4...) regardless of original day numbers
+    this.projects = projectsData.map((project, index) => ({
+      ...project,
+      day: index + 1
+    }));
+
     this.filteredProjects = [...this.projects];
+  }
+
+  filterProjects() {
+    let filtered = [...this.projects];
+
+    // Filter by category
+    if (this.currentFilter !== 'all') {
+      filtered = filtered.filter(project => project.category === this.currentFilter);
+    }
+
+    // Filter by search term
+    if (this.searchTerm) {
+      filtered = filtered.filter(project => 
+        project.name.toLowerCase().includes(this.searchTerm) ||
+        project.description.toLowerCase().includes(this.searchTerm) ||
+        project.technologies.some(tech => tech.toLowerCase().includes(this.searchTerm)) ||
+        project.features.some(feature => feature.toLowerCase().includes(this.searchTerm))
+      );
+    }
+
+    this.filteredProjects = filtered;
+    this.currentPage = 1; // Reset to first page
+    this.renderTable();
   }
 
   setActiveFilter(filter) {
