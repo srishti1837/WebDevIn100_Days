@@ -526,12 +526,6 @@ class WebDev100Days {
       day: index + 1
     }));
 
-    // Assign sequential day numbers (1, 2, 3, 4...) regardless of original day numbers
-    this.projects = projectsData.map((project, index) => ({
-      ...project,
-      day: index + 1
-    }));
-
     this.filteredProjects = [...this.projects];
   }
 
