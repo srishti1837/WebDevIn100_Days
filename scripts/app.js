@@ -517,6 +517,15 @@ class WebDev100Days {
         category: "utilities",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Multiple Time Zones", "Real-time Updates", "Custom Locations", "12/24 Hour Format"]
+      },
+      {
+        originalDay: 108,
+        name: "Hamster Slap",
+        description: "Slap the Hamster coming from the hole.",
+        demoLink: "./public/Day-69/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Hide n seek", "Catch", "Slap"]
       }
     ];
 
