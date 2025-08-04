@@ -517,6 +517,15 @@ class WebDev100Days {
         category: "utilities",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Multiple Time Zones", "Real-time Updates", "Custom Locations", "12/24 Hour Format"]
+      },
+      {
+        originalDay: 109,
+        name: "University Management System",
+        description: "Manage university operations including courses, students, and faculty.",
+        demoLink: "./public/University_managment_system/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript", "API"],
+        features: ["Visitor Management", "History Tracking", "Search Functionality"]
       }
     ];
 
