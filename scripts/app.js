@@ -626,6 +626,16 @@ class WebDev100Days {
         category: "games",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Score System", "Lifes", "Fruit Cutting"]
+      },
+
+      { 
+         originalDay: 121,
+         name: "Github Profle Finder ",
+        description: "Find Github Profile ",
+        demoLink: "./public/Github_Profile_Finder/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Github", "Github Followers ", "Creative"]
       }
 
       
