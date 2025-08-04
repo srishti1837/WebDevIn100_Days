@@ -518,7 +518,7 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Multiple Time Zones", "Real-time Updates", "Custom Locations", "12/24 Hour Format"]
       },
-      
+      {
         originalDay: 109,
         name: "Notes Tracker",
         description: "A simple and organized digital notebook to create, update, and manage notes efficiently.",
