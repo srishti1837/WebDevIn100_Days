@@ -517,6 +517,15 @@ class WebDev100Days {
         category: "utilities",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Multiple Time Zones", "Real-time Updates", "Custom Locations", "12/24 Hour Format"]
+      },
+      {
+        originalDay: 109,
+        name: "Fruit Slicer ",
+        description: "Every slice counts. Miss and it’s game over!",
+        demoLink: "./public/Fruit_Slicer_Game/index.html",
+        category: "games",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Score System", "Lifes", "Fruit Cutting"]
       }
     ];
 
