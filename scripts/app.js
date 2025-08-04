@@ -618,8 +618,8 @@ class WebDev100Days {
         features: ["Canvas Drawing", "Color Picker", "Brush Size Control", "Clear Canvas Button"]
       },
     ];
-
-    // Assign sequential day numbers (1, 2, 3, 4...) regardless of original day numbers
+  
+  // Assign sequential day numbers (1, 2, 3, 4...) regardless of original day numbers
     this.projects = projectsData.map((project, index) => ({
       ...project,
       day: index + 1
