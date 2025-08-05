@@ -247,6 +247,7 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript", "Canvas"],
         features: ["Neon Graphics", "Power-ups", "Score System"]
       },
+      
       {
         originalDay: 11,
         name: "Weather App",
@@ -435,6 +436,15 @@ class WebDev100Days {
         category: "games",
         technologies: ["HTML", "CSS", "JavaScript", "SVG"],
         features: ["Move Validation", "Piece Animation", "Game Logic", "Interactive Board"]
+      },
+       {
+        originalDay: 55,
+        name: "TypeRush",
+        description: "Typing speed test game with real-time feedback and statistics.",
+        demoLink: "./public/Day-55_TypeRush/index.html",
+        category: "games",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Typing Challenge", "Real-time Feedback", "Statistics Tracking"]
       },
       {
         originalDay: 72,
