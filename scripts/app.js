@@ -618,6 +618,7 @@ class WebDev100Days {
         features: ["Canvas Drawing", "Color Picker", "Brush Size Control", "Clear Canvas Button"]
       },
 
+
       { 
          originalDay: 120,
          name: "Fruit Slicer ",
@@ -628,6 +629,7 @@ class WebDev100Days {
         features: ["Score System", "Lifes", "Fruit Cutting"]
       },
 
+
       { 
          originalDay: 121,
          name: "Github Profle Finder ",
@@ -636,9 +638,20 @@ class WebDev100Days {
         category: "utilities",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Github", "Github Followers ", "Creative"]
-      }
+      },
+
 
       
+        {
+
+        originalDay: 122,
+        name: "Hamster Slap",
+        description: "Slap the Hamster coming from the hole.",
+        demoLink: "./public/Day-69/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Hide n seek", "Catch", "Slap"]
+      }
 
     ];
   
