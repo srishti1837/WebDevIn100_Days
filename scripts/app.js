@@ -438,10 +438,10 @@ class WebDev100Days {
         features: ["Move Validation", "Piece Animation", "Game Logic", "Interactive Board"]
       },
        {
-        originalDay: 55,
+        originalDay: 56,
         name: "TypeRush",
         description: "Typing speed test game with real-time feedback and statistics.",
-        demoLink: "./public/Day-55_TypeRush/index.html",
+        demoLink: "./public/Day-56_TypeRush/index.html",
         category: "games",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Typing Challenge", "Real-time Feedback", "Statistics Tracking"]
