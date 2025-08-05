@@ -617,9 +617,22 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Canvas Drawing", "Color Picker", "Brush Size Control", "Clear Canvas Button"]
       },
+
+
+      { 
+         originalDay: 120,
+         name: "Fruit Slicer ",
+        description: "Every slice counts. Miss and it’s game over!",
+        demoLink: "./public/Fruit_Slicer_Game/index.html",
+        category: "games",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Score System", "Lifes", "Fruit Cutting"]
+      },
+
+      
         {
 
-        originalDay: 120,
+        originalDay: 121,
         name: "Hamster Slap",
         description: "Slap the Hamster coming from the hole.",
         demoLink: "./public/Day-69/index.html",
