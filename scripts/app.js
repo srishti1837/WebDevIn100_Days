@@ -661,6 +661,16 @@ class WebDev100Days {
         category: "utilities",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Hide n seek", "Catch", "Slap"]
+      },
+        {
+
+        originalDay: 123,
+        name: "LeetMatrix",
+        description: "Check Leetcode stats ",
+        demoLink: "./public/LeetMatrix/index.html",
+        category: "basic",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["LeetCode", "Stats", "Graph"]
       }
 
     ];
