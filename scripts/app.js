@@ -247,6 +247,7 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript", "Canvas"],
         features: ["Neon Graphics", "Power-ups", "Score System"]
       },
+      
       {
         originalDay: 11,
         name: "Weather App",
@@ -436,6 +437,15 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript", "SVG"],
         features: ["Move Validation", "Piece Animation", "Game Logic", "Interactive Board"]
       },
+       {
+        originalDay: 56,
+        name: "TypeRush",
+        description: "Typing speed test game with real-time feedback and statistics.",
+        demoLink: "./public/Day-56_TypeRush/index.html",
+        category: "games",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Typing Challenge", "Real-time Feedback", "Statistics Tracking"]
+      },
       {
         originalDay: 72,
         name: "Portfolio Website",
@@ -617,8 +627,52 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Canvas Drawing", "Color Picker", "Brush Size Control", "Clear Canvas Button"]
       },
-      {
-        originalDay: 120,
+
+      { 
+         originalDay: 120,
+         name: "Fruit Slicer ",
+        description: "Every slice counts. Miss and it’s game over!",
+        demoLink: "./public/Fruit_Slicer_Game/index.html",
+        category: "games",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Score System", "Lifes", "Fruit Cutting"]
+      },
+
+
+      { 
+         originalDay: 121,
+         name: "Github Profle Finder ",
+        description: "Find Github Profile ",
+        demoLink: "./public/Github_Profile_Finder/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Github", "Github Followers ", "Creative"]
+      },
+
+
+      
+        {
+
+        originalDay: 122,
+        name: "Hamster Slap",
+        description: "Slap the Hamster coming from the hole.",
+        demoLink: "./public/Day-69/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Hide n seek", "Catch", "Slap"]
+      },
+        {
+
+        originalDay: 123,
+        name: "LeetMatrix",
+        description: "Check Leetcode stats ",
+        demoLink: "./public/LeetMatrix/index.html",
+        category: "basic",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["LeetCode", "Stats", "Graph"]
+      },
+       {
+        originalDay: 150,
           name: "University Management System",
         description: "Manage university operations including courses, students, and faculty.",
         demoLink: "./public/University_managment_system/index.html",
@@ -626,6 +680,8 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript", "API"],
         features: ["Visitor Management", "History Tracking", "Search Functionality"]
       }
+
+
     ];
   
   // Assign sequential day numbers (1, 2, 3, 4...) regardless of original day numbers
