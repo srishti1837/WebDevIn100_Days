@@ -618,6 +618,7 @@ class WebDev100Days {
         features: ["Canvas Drawing", "Color Picker", "Brush Size Control", "Clear Canvas Button"]
       },
 
+
       { 
          originalDay: 120,
          name: "Fruit Slicer ",
@@ -626,9 +627,19 @@ class WebDev100Days {
         category: "games",
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Score System", "Lifes", "Fruit Cutting"]
-      }
+      },
 
       
+        {
+
+        originalDay: 121,
+        name: "Hamster Slap",
+        description: "Slap the Hamster coming from the hole.",
+        demoLink: "./public/Day-69/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Hide n seek", "Catch", "Slap"]
+      }
 
     ];
   
