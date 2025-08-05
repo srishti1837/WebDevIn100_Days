@@ -617,6 +617,17 @@ class WebDev100Days {
         technologies: ["HTML", "CSS", "JavaScript"],
         features: ["Canvas Drawing", "Color Picker", "Brush Size Control", "Clear Canvas Button"]
       },
+        {
+
+        originalDay: 120,
+        name: "Hamster Slap",
+        description: "Slap the Hamster coming from the hole.",
+        demoLink: "./public/Day-69/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Hide n seek", "Catch", "Slap"]
+      }
+
     ];
   
   // Assign sequential day numbers (1, 2, 3, 4...) regardless of original day numbers
