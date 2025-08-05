@@ -629,10 +629,22 @@ class WebDev100Days {
         features: ["Score System", "Lifes", "Fruit Cutting"]
       },
 
+
+      { 
+         originalDay: 121,
+         name: "Github Profle Finder ",
+        description: "Find Github Profile ",
+        demoLink: "./public/Github_Profile_Finder/index.html",
+        category: "utilities",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        features: ["Github", "Github Followers ", "Creative"]
+      },
+
+
       
         {
 
-        originalDay: 121,
+        originalDay: 122,
         name: "Hamster Slap",
         description: "Slap the Hamster coming from the hole.",
         demoLink: "./public/Day-69/index.html",
